@@ -1,5 +1,0 @@
-@function px($number) {
-	$result: $number +px;
-
-	@return $result;
-}
