@@ -4,7 +4,10 @@
 
 .about-us__img {
 	object-fit: cover;
-	@include av('heigth', 300, 200, $maxWC, $minWC);
+	width: 100%;
+	@include av('height', 300, 200, $maxWC, $minWC);
+
+	border-radius: 10px;
 }
 
 .about-us__title {
@@ -29,3 +32,13 @@
 .blue-title {}
 
 .txt {}
+
+@media (max-width: px($wc3)) {
+	.about-us__content {
+		display: block;
+	}
+
+	.about-us__subtitle {
+		display: none;
+	}
+}
