@@ -11,7 +11,7 @@
 .H1 {
 	/* H1 */
 	font-family: Poppins;
-	@include av('font-size', 100, 32, $maxWC, $minWC);
+	@include av('font-size', 100, 36, $maxWC, $minWC);
 	font-style: normal;
 	font-weight: 700;
 	line-height: 110%;
@@ -37,7 +37,7 @@
 .blue-title {
 	/* blue title */
 	font-family: Poppins;
-	@include av('font-size', 28, 15, $maxWC, $minWC);
+	@include av('font-size', 28, 17, $maxWC, $minWC);
 	font-style: normal;
 	font-weight: 500;
 	line-height: 130%;
