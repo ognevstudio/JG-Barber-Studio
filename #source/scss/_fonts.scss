@@ -1,0 +1,74 @@
+// ------------------------------
+
+// Подключение шрифтов
+// -- Poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+// ------------------------------
+
+
+// Текстовые стили
+.H1 {
+	/* H1 */
+	font-family: Poppins;
+	@include av('font-size', 100, 32, $maxWC, $minWC);
+	font-style: normal;
+	font-weight: 700;
+	line-height: 110%;
+	/* 110px */
+	text-transform: uppercase;
+
+	color: $txt-white;
+}
+
+.H2 {
+	/* H2 */
+	font-family: Poppins;
+	@include av('font-size', 52, 28, $maxWC, $minWC);
+	font-style: normal;
+	font-weight: 700;
+	line-height: 110%;
+	/* 57.2px */
+	text-transform: uppercase;
+
+	color: $txt-white;
+}
+
+.blue-title {
+	/* blue title */
+	font-family: Poppins;
+	@include av('font-size', 28, 15, $maxWC, $minWC);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%;
+	/* 36.4px */
+
+	color: $txt-lightblue;
+}
+
+.text {
+	/* txt */
+	font-family: Poppins;
+	@include av('font-size', 20, 17, $maxWC, $minWC);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	/* 26px */
+
+	color: $txt-lightblue;
+}
+
+.bold-text {
+	font-family: Poppins;
+	@include av('font-size', 20, 17, $maxWC, $minWC);
+	font-style: normal;
+	font-weight: 600;
+	line-height: 110%;
+	/* 22px */
+}
+
+a {
+	color: $txt-white;
+}
+
+// ------------------------------
