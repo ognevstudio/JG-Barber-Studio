@@ -1,6 +1,8 @@
 .header {
 	@include av('padding', $s3, $s2, $maxWC, $minWC);
-
+	width: 100%;
+	background-color: $main-bg;
+	position: fixed;
 }
 
 .header__container {

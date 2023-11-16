@@ -1,5 +1,5 @@
 .hero {
-	@include av('margin-top', $s4, $s3, $maxWC, $minWC);
+	@include av('padding-top', 140, 100, $maxWC, $minWC);
 }
 
 .hero__container {}
