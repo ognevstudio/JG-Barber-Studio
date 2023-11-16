@@ -1,0 +1,31 @@
+.about-us {
+	@include av('margin-top', $s6, $s5, $maxWC, $minWC);
+}
+
+.about-us__img {
+	object-fit: cover;
+	@include av('heigth', 300, 200, $maxWC, $minWC);
+}
+
+.about-us__title {
+	@include av('margin-top', $s5, $s4, $maxWC, $minWC);
+}
+
+.about-us__content {
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: px($s2);
+}
+
+.about-us__txt {
+	max-width: 400px;
+}
+
+.about-us__subtitle {
+	max-width: 350px;
+}
+
+.blue-title {}
+
+.txt {}

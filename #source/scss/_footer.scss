@@ -1,0 +1,4 @@
+.footer {
+	color: $main-bg;
+	@include av('margin-top', $s6, $s5, $maxWC, $minWC);
+}
