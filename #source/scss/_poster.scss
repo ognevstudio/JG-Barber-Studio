@@ -1,0 +1,118 @@
+.poster {
+	@include av('margin-top', $s6, $s5, $maxWC, $minWC);
+	position: relative;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.poster__container {
+	position: relative;
+	z-index: 1;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: px(0) px($s1);
+}
+
+.poster_bg {
+	position: absolute;
+	top: 10%;
+	text-wrap: nowrap;
+	font-family: Poppins;
+	@include av('font-size', 180, 60, $maxWC, $minWC);
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%;
+	text-transform: uppercase;
+
+	color: $txt-darkblue;
+
+	margin-left: -50%;
+}
+
+.line {
+	z-index: 1;
+
+	max-width: 100%;
+	display: flex;
+	/* Делаем текст в строке, чтобы он мог бежать горизонтально */
+	animation: marquee 700s linear infinite;
+	/* Название анимации, длительность, способ интерполяции и бесконечное повторение */
+	animation-timing-function: linear;
+
+	span {
+		color: $txt-blue;
+	}
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+	}
+
+	/* Начальное положение текста */
+	100% {
+		transform: translateX(-100%);
+	}
+
+	/* Конечное положение текста (влево на 100% от ширины контейнера) */
+}
+
+
+
+.poster__img {
+
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.poster__line {
+	position: relative;
+	margin-top: -5%;
+	display: flex;
+	gap: 30px;
+	align-items: center;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	border: 2px solid $main-white;
+	background: $main-bg;
+
+	font-family: Poppins;
+	@include av('font-size', 24, 15, $maxWC, $minWC);
+	font-style: normal;
+	font-weight: 600;
+	line-height: 120%;
+	/* 36px */
+	text-transform: lowercase;
+
+	top: 50%;
+	/* Положение текста сверху на 50% контейнера */
+	transform: translateY(-50%) rotate(-5deg);
+	/* Поворот текста на -45 градусов и коррекция позиции */
+	animation: line 10s linear infinite;
+}
+
+@keyframes line {
+	0% {
+		right: 100%;
+	}
+
+	/* Начальное положение текста (смещение на 100% от правого края контейнера) */
+	100% {
+		right: -100%;
+	}
+
+	/* Конечное положение текста (смещение на -100% от правого края контейнера) */
+}
+
+
+.square {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: $main-cream;
+}
