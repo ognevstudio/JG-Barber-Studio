@@ -18,7 +18,7 @@
 .poster_bg {
 	position: absolute;
 	top: 10%;
-	text-wrap: nowrap;
+	white-space: nowrap;
 	font-family: Poppins;
 	@include av('font-size', 180, 60, $maxWC, $minWC);
 	font-style: normal;

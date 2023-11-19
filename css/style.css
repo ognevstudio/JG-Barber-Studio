@@ -462,7 +462,7 @@ a {
 .poster_bg {
   position: absolute;
   top: 10%;
-  text-wrap: nowrap;
+  white-space: nowrap;
   font-family: Poppins;
   font-size: 180px;
   font-style: normal;
