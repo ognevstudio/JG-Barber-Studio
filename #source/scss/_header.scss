@@ -1,6 +1,8 @@
 .header {
 	z-index: 100;
-	@include av('padding', $s3, $s2, $maxWC, $minWC);
+	@include av('padding-top', $s3, $s2, $maxWC, $minWC);
+	@include av('padding-bottom', $s3, $s2, $maxWC, $minWC);
+
 	width: 100%;
 	background-color: $main-bg;
 	position: fixed;
@@ -58,5 +60,4 @@
 	.header__btn {
 		@include av('margin-right', 20, 10, $maxWC, $minWC);
 	}
-
 }

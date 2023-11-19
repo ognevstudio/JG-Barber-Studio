@@ -72,6 +72,7 @@ $s6: 120;
 @import './hero';
 @import './about-us';
 @import './poster';
+@import './gallery';
 
 @import './footer';
 
@@ -90,4 +91,10 @@ $s6: 120;
 body {
 	background-color: $main-bg;
 	color: $txt-white;
+}
+
+.app {
+
+	width: 100vw;
+	overflow: hidden;
 }

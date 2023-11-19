@@ -1,0 +1,12 @@
+.gallery {
+	@include av('margin-top', 180, 100, $maxWC, $minWC);
+}
+
+.gallery__container {}
+
+.gallery__title {}
+
+
+.gallery__img {}
+
+.imgs {}

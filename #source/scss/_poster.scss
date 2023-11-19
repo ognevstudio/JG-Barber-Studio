@@ -62,23 +62,31 @@
 
 
 .poster__img {
-
 	max-width: 900px;
 	width: 100%;
 	margin: 0 auto;
 }
 
-.poster__line {
+.poster-line {
+	width: 120%;
 	position: relative;
+	z-index: 10;
 	margin-top: -5%;
+	margin-left: -2%;
+	transform: rotate(-5deg);
+
+}
+
+.poster-line__container {
 	display: flex;
-	gap: 30px;
+	@include av('gap', 30, 16, $maxWC, $minWC);
 	align-items: center;
 
 	padding-top: 10px;
 	padding-bottom: 10px;
 
-	border: 2px solid $main-white;
+	border-top: 2px solid $main-white;
+	border-bottom: 2px solid $main-white;
 	background: $main-bg;
 
 	font-family: Poppins;
@@ -88,27 +96,15 @@
 	line-height: 120%;
 	/* 36px */
 	text-transform: lowercase;
-
-	top: 50%;
-	/* Положение текста сверху на 50% контейнера */
-	transform: translateY(-50%) rotate(-5deg);
-	/* Поворот текста на -45 градусов и коррекция позиции */
-	animation: line 10s linear infinite;
 }
 
-@keyframes line {
-	0% {
-		right: 100%;
-	}
+.line__body {
+	display: flex;
+	align-items: center;
+	@include av('gap', 30, 16, $maxWC, $minWC);
 
-	/* Начальное положение текста (смещение на 100% от правого края контейнера) */
-	100% {
-		right: -100%;
-	}
-
-	/* Конечное положение текста (смещение на -100% от правого края контейнера) */
+	width: 100%;
 }
-
 
 .square {
 	width: 8px;

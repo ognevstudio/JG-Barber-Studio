@@ -172,14 +172,20 @@ a {
 
 .header {
   z-index: 100;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
   background-color: #0F1824;
   position: fixed;
 }
 @media (max-width: 1070px) {
   .header {
-    padding: calc(10px + 10 * ((100vw - 360px) / 710));
+    padding-top: calc(10px + 10 * ((100vw - 360px) / 710));
+  }
+}
+@media (max-width: 1070px) {
+  .header {
+    padding-bottom: calc(10px + 10 * ((100vw - 360px) / 710));
   }
 }
 
@@ -501,15 +507,23 @@ a {
   margin: 0 auto;
 }
 
-.poster__line {
+.poster-line {
+  width: 120%;
   position: relative;
+  z-index: 10;
   margin-top: -5%;
+  margin-left: -2%;
+  transform: rotate(-5deg);
+}
+
+.poster-line__container {
   display: flex;
   gap: 30px;
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 2px solid #FFFFFF;
+  border-top: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
   background: #0F1824;
   font-family: Poppins;
   font-size: 24px;
@@ -518,33 +532,44 @@ a {
   line-height: 120%;
   /* 36px */
   text-transform: lowercase;
-  top: 50%;
-  /* Положение текста сверху на 50% контейнера */
-  transform: translateY(-50%) rotate(-5deg);
-  /* Поворот текста на -45 градусов и коррекция позиции */
-  animation: line 10s linear infinite;
 }
 @media (max-width: 1070px) {
-  .poster__line {
+  .poster-line__container {
+    gap: calc(16px + 14 * ((100vw - 360px) / 710));
+  }
+}
+@media (max-width: 1070px) {
+  .poster-line__container {
     font-size: calc(15px + 9 * ((100vw - 360px) / 710));
   }
 }
 
-@keyframes line {
-  0% {
-    right: 100%;
-  }
-  /* Начальное положение текста (смещение на 100% от правого края контейнера) */
-  100% {
-    right: -100%;
-  }
-  /* Конечное положение текста (смещение на -100% от правого края контейнера) */
+.line__body {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
 }
+@media (max-width: 1070px) {
+  .line__body {
+    gap: calc(16px + 14 * ((100vw - 360px) / 710));
+  }
+}
+
 .square {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #F6C094;
+}
+
+.gallery {
+  margin-top: 180px;
+}
+@media (max-width: 1070px) {
+  .gallery {
+    margin-top: calc(100px + 80 * ((100vw - 360px) / 710));
+  }
 }
 
 .footer {
@@ -566,4 +591,9 @@ a {
 body {
   background-color: #0F1824;
   color: #FFFFFF;
+}
+
+.app {
+  width: 100vw;
+  overflow: hidden;
 }
