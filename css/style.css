@@ -148,7 +148,7 @@ h6 {
 }
 @media (max-width: 1070px) {
   .text {
-    font-size: calc(17px + 3 * ((100vw - 360px) / 710));
+    font-size: calc(15px + 5 * ((100vw - 360px) / 710));
   }
 }
 
@@ -162,12 +162,27 @@ h6 {
 }
 @media (max-width: 1070px) {
   .bold-text {
-    font-size: calc(17px + 3 * ((100vw - 360px) / 710));
+    font-size: calc(15px + 5 * ((100vw - 360px) / 710));
   }
 }
 
 a {
   color: #FFFFFF;
+}
+
+.service__title {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  /* 26.4px */
+  text-transform: uppercase;
+}
+@media (max-width: 1070px) {
+  .service__title {
+    font-size: calc(17px + 7 * ((100vw - 360px) / 710));
+  }
 }
 
 .header {
@@ -583,7 +598,7 @@ a {
   gap: 10px;
 }
 
-.gallery-li {
+.gallery-list__li {
   width: auto;
   max-width: 100%;
   -o-object-fit: cover;
@@ -593,7 +608,7 @@ a {
   border-radius: 10px;
 }
 
-.gallery-li:last-child {
+.gallery-list__li:last-child {
   grid-column-start: 2;
   grid-column-end: 4;
 }
@@ -602,9 +617,66 @@ a {
   .gallery-list {
     grid-template-columns: repeat(2, 1fr);
   }
-  .gallery-li:last-child {
+  .gallery-list__li:last-child {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+}
+.services {
+  margin-top: 120px;
+}
+@media (max-width: 1070px) {
+  .services {
+    margin-top: calc(60px + 60 * ((100vw - 360px) / 710));
+  }
+}
+
+.services__list {
+  margin-top: 20px;
+}
+
+.services-list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.services-list__li {
+  padding: 20px;
+  background-color: #172436;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1070px) {
+  .services-list__li {
+    padding: calc(10px + 10 * ((100vw - 360px) / 710));
+  }
+}
+
+.service__txt {
+  margin-top: 10px;
+}
+
+.service__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.service__time {
+  color: #748DB1;
+}
+
+@media (max-width: 767.98px) {
+  .services-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 474.98px) {
+  .services-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .footer {

@@ -14,7 +14,7 @@
 }
 
 
-.gallery-li {
+.gallery-list__li {
 	width: auto;
 	max-width: 100%;
 	object-fit: cover;
@@ -25,7 +25,7 @@
 	border-radius: 10px;
 }
 
-.gallery-li:last-child {
+.gallery-list__li:last-child {
 	grid-column-start: 2;
 	grid-column-end: 4;
 }
@@ -35,7 +35,7 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.gallery-li:last-child {
+	.gallery-list__li:last-child {
 		grid-column-start: 1;
 		grid-column-end: 3;
 	}

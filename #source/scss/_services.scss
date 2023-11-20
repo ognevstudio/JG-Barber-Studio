@@ -1,0 +1,56 @@
+.services {
+	@include av('margin-top', $s6, $s5, $maxWC, $minWC);
+}
+
+.services__list {
+	margin-top: 20px;
+}
+
+.services-list {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, 1fr)
+}
+
+.services-list__li {
+	@include av('padding', 20, 10, $maxWC, $minWC);
+
+	background-color: $main-blue;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.service {}
+
+.service__header {}
+
+
+.service__txt {
+	margin-top: 10px;
+}
+
+.service__info {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.service__price {}
+
+.service__time {
+	color: $txt-lightblue;
+}
+
+@media (max-width: px($wc3)) {
+	.services-list {
+		grid-template-columns: repeat(2, 1fr)
+	}
+}
+
+@media (max-width: px($wc2)) {
+	.services-list {
+		grid-template-columns: repeat(2, 1fr)
+	}
+}

@@ -49,18 +49,17 @@
 .text {
 	/* txt */
 	font-family: Poppins;
-	@include av('font-size', 20, 17, $maxWC, $minWC);
+	@include av('font-size', 20, 15, $maxWC, $minWC);
 	font-style: normal;
 	font-weight: 400;
 	line-height: 130%;
 	/* 26px */
-
 	color: $txt-lightblue;
 }
 
 .bold-text {
 	font-family: Poppins;
-	@include av('font-size', 20, 17, $maxWC, $minWC);
+	@include av('font-size', 20, 15, $maxWC, $minWC);
 	font-style: normal;
 	font-weight: 600;
 	line-height: 110%;
@@ -72,3 +71,13 @@ a {
 }
 
 // ------------------------------
+
+.service__title {
+	font-family: Poppins;
+	@include av('font-size', 24, 17, $maxWC, $minWC);
+	font-style: normal;
+	font-weight: 600;
+	line-height: 110%;
+	/* 26.4px */
+	text-transform: uppercase;
+}
