@@ -22,56 +22,56 @@ const servicesList = document.querySelector('.services-list')
 // Массив с данными всех категорий меню
 let servicesArr = [
 	{
-		title: 'Only haircut', 
+		title: 'Only haircut / Solo Corte', 
 		EN: 'Regular haircut and shampoo', 
-		ES: '',
+		ES: 'Corte regular y shampoo',
 		price: '$40.00',
 		time: '30 min',
 	},
 	{
-		title: 'only Beard', 
-		EN: 'Hot towel and shave, hair line up can be added ', 
-		ES: '',
-		price: '$40.00',
-		time: '30 min',
-	},
-	{
-		title: 'Haircut And Eyebrows', 
+		title: 'Haircut And Eyebrows / Corte y Cejas', 
 		EN: 'Regular haircut, Shampoo and eyebrows', 
-		ES: '',
+		ES: 'Corte regular, shampoo y cejas',
 		price: '$45.00',
 		time: '30 min',
 	},
 	{
-		title: 'Haircut & Beard', 
+		title: 'Haircut & Beard / Corte y Barba', 
 		EN: 'Hot towel shave and shampoo does not include temporary paint', 
-		ES: '',
+		ES: 'Rasurado con toalla caliente, shampoo, no incluye pintura temporal',
 		price: '$70.00',
 		time: '60 min',
 	},
 	{
-		title: 'Kids Haircut', 
-		EN: '9 year old and under ', 
-		ES: '',
+		title: 'only Beard / Solo Barba', 
+		EN: 'Hot towel and shave, hair line up can be added ', 
+		ES: 'Toalla caliente y rasurado, delineado de cabello puede ser agregado',
 		price: '$40.00',
 		time: '30 min',
 	},
 	{
-		title: 'Haircut', 
+		title: 'Kids Haircut / Corte de niño', 
+		EN: '9 year old and under ', 
+		ES: '9 años o menos',
+		price: '$40.00',
+		time: '30 min',
+	},
+	{
+		title: 'Haircut / Corte De Cabello', 
 		EN: 'Eyebrows included , shampoo and styled hair with our line of products', 
 		ES: '',
 		price: '$50.00',
 		time: '60 min',
 	},
 	{
-		title: 'Haircut And Beard Shave', 
+		title: 'Haircut And Beard Shave/ Corte Y Rasurado De Barba', 
 		EN: 'Eyebrows included , shampoo and styled hair with our line of products', 
 		ES: '',
 		price: '$60.00',
 		time: '60 min',
 	},
 	{
-		title: 'Kids Haircut', 
+		title: 'Kids Haircut / Corte De Cabello Infantil', 
 		EN: 'Eyebrows included (optional) , shampoo and styled hair with our line of products', 
 		ES: '',
 		price: '$50.00',
@@ -79,28 +79,24 @@ let servicesArr = [
 	}
 ]
 
-let ID = 0
-
 // Генерируем все карточки
 servicesArr.forEach(service => {
-	ID += 1
 	let element = document.createElement('div')
 
 	element.classList.add('services-list__li');
-	element.id = ID;
 
 	imgPath = './img/main.svg'
 
 	let template = `
-<div class="service__header">
-	<h4 class="service__title">${service.title}</h4>
-	<p class="service__txt text">${service.EN}</p>
-	<p class="service__txt text">${service.ES}</p>	
-</div>
-<div class="service__info">
-	<span class="service__price bold-text">${service.price}</span>
-	<span class="service__time bold-text">${service.time}</span>
-</div>
+	<div class="service__header">
+		<h4 class="service__title">${service.title}</h4>
+		<p class="service__txt text">${service.EN}</p>
+		<p class="service__txt text">${service.ES}</p>	
+	</div>
+	<div class="service__info">
+		<span class="service__price bold-text">${service.price}</span>
+		<span class="service__time bold-text">${service.time}</span>
+	</div>
 	`
 	
 	element.innerHTML = template

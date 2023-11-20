@@ -13,7 +13,7 @@
 }
 
 .services-list__li {
-	@include av('padding', 20, 10, $maxWC, $minWC);
+	@include av('padding', 20, 16, $maxWC, $minWC);
 
 	background-color: $main-blue;
 	border-radius: 10px;
@@ -37,6 +37,7 @@
 	margin-top: 40px;
 }
 
+
 .service__price {}
 
 .service__time {
@@ -51,6 +52,6 @@
 
 @media (max-width: px($wc2)) {
 	.services-list {
-		grid-template-columns: repeat(2, 1fr)
+		grid-template-columns: repeat(1, 1fr)
 	}
 }
