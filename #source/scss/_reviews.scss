@@ -46,7 +46,7 @@
 
 @keyframes marqueeMobile {
 	0% {
-		transform: translateX(-300%);
+		transform: translateX(-200%);
 	}
 
 	/* Начальное положение текста */
@@ -112,9 +112,14 @@
 
 
 	.reviews__first-row {
-		margin-left: -400%;
+		margin-left: 0%;
 		align-items: start;
-		animation: marqueeMobile 10s linear infinite;
+		animation: none;
+		overflow: scroll;
+	}
+
+	.reviews__first-row::-webkit-scrollbar {
+		width: 0;
 	}
 
 	.reviews__second-row {
