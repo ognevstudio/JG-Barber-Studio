@@ -787,7 +787,7 @@ a {
   .reviews__first-row {
     margin-left: -400%;
     align-items: start;
-    animation: marqueeMobile 20s linear infinite;
+    animation: marqueeMobile 15s linear infinite;
   }
   .reviews__second-row {
     display: none;
