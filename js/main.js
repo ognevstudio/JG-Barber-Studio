@@ -102,3 +102,187 @@ servicesArr.forEach(service => {
 	element.innerHTML = template
 	servicesList.appendChild(element)
 });
+
+
+
+/* ----------------------------------- */
+
+
+const reviewsList01 = document.querySelector('.reviews__first-row')
+
+// Массив с данными всех категорий меню
+let reviewsArr01 = [
+	{
+		text: `Josue and Gabriel will take great care of you. Get a cut as simple or as complex as you like here, and always feel welcome. Easy 5 stars!`, 
+		author: `Borna Arjomandi`
+	},
+	{
+		text: `Amazing attention, service and work quality!`, 
+		author: `Luis Rivas`
+	},
+	{
+		text: `Excellent work, very professional, clean and helpful`, 
+		author: `Luis Roberto Ninffert`
+	},
+	{
+		text: `Josue and Gabriel will take great care of you. Get a cut as simple or as complex as you like here, and always feel welcome. Easy 5 stars!`, 
+		author: `Borna Arjomandi`
+	},
+	{
+		text: `Amazing attention, service and work quality!`, 
+		author: `Luis Rivas`
+	},
+	{
+		text: `Excellent work, very professional, clean and helpful`, 
+		author: `Luis Roberto Ninffert`
+	},
+	{
+		text: `Josue and Gabriel will take great care of you. Get a cut as simple or as complex as you like here, and always feel welcome. Easy 5 stars!`, 
+		author: `Borna Arjomandi`
+	},
+	{
+		text: `Amazing attention, service and work quality!`, 
+		author: `Luis Rivas`
+	},
+	{
+		text: `Excellent work, very professional, clean and helpful`, 
+		author: `Luis Roberto Ninffert`
+	}
+]
+
+const reviewsList02 = document.querySelector('.reviews__second-row')
+
+// Массив с данными всех категорий меню
+let reviewsArr02 = [
+	{
+		text: `Josue and Gabriel will take great care of you. Get a cut as simple or as complex as you like here, and always feel welcome. Easy 5 stars!`, 
+		author: `Borna Arjomandi`
+	},
+	{
+		text: `Amazing attention, service and work quality!`, 
+		author: `Luis Rivas`
+	},
+	{
+		text: `I have been taking my son to see Gabe since forever! He is super professional and does an amazing job! Not to mention the way he treats my son. He is always so nice! My son loves him and always lets him do «free style» that’s how much he trusts him! Gabe does an impeccable job all the time!!`, 
+		author: `Devin Cruz`
+	},
+	{
+		text: `Josue and Gabriel will take great care of you. Get a cut as simple or as complex as you like here, and always feel welcome. Easy 5 stars!`, 
+		author: `Borna Arjomandi`
+	},
+	{
+		text: `Amazing attention, service and work quality!`, 
+		author: `Luis Rivas`
+	},
+	{
+		text: `I have been taking my son to see Gabe since forever! He is super professional and does an amazing job! Not to mention the way he treats my son. He is always so nice! My son loves him and always lets him do «free style» that’s how much he trusts him! Gabe does an impeccable job all the time!!`, 
+		author: `Devin Cruz`
+	},
+	{
+		text: `Excellent work, very professional, clean and helpful`, 
+		author: `Luis Roberto Ninffert`
+	},
+	{
+		text: `Josue and Gabriel will take great care of you. Get a cut as simple or as complex as you like here, and always feel welcome. Easy 5 stars!`, 
+		author: `Borna Arjomandi`
+	},
+	{
+		text: `Amazing attention, service and work quality!`, 
+		author: `Luis Rivas`
+	},
+	{
+		text: `Excellent work, very professional, clean and helpful`, 
+		author: `Luis Roberto Ninffert`
+	},
+	{
+		text: `Josue and Gabriel will take great care of you. Get a cut as simple or as complex as you like here, and always feel welcome. Easy 5 stars!`, 
+		author: `Borna Arjomandi`
+	},
+	{
+		text: `Amazing attention, service and work quality!`, 
+		author: `Luis Rivas`
+	},
+	{
+		text: `I have been taking my son to see Gabe since forever! He is super professional and does an amazing job! Not to mention the way he treats my son. He is always so nice! My son loves him and always lets him do «free style» that’s how much he trusts him! Gabe does an impeccable job all the time!!`, 
+		author: `Devin Cruz`
+	},
+	{
+		text: `Excellent work, very professional, clean and helpful`, 
+		author: `Luis Roberto Ninffert`
+	},
+	{
+		text: `Josue and Gabriel will take great care of you. Get a cut as simple or as complex as you like here, and always feel welcome. Easy 5 stars!`, 
+		author: `Borna Arjomandi`
+	},
+	{
+		text: `Amazing attention, service and work quality!`, 
+		author: `Luis Rivas`
+	},
+	{
+		text: `Excellent work, very professional, clean and helpful`, 
+		author: `Luis Roberto Ninffert`
+	},
+	{
+		text: `Josue and Gabriel will take great care of you. Get a cut as simple or as complex as you like here, and always feel welcome. Easy 5 stars!`, 
+		author: `Borna Arjomandi`
+	},
+	{
+		text: `Amazing attention, service and work quality!`, 
+		author: `Luis Rivas`
+	},
+	{
+		text: `I have been taking my son to see Gabe since forever! He is super professional and does an amazing job! Not to mention the way he treats my son. He is always so nice! My son loves him and always lets him do «free style» that’s how much he trusts him! Gabe does an impeccable job all the time!!`, 
+		author: `Devin Cruz`
+	},
+	{
+		text: `Excellent work, very professional, clean and helpful`, 
+		author: `Luis Roberto Ninffert`
+	}
+]
+
+// Генерируем все карточки
+reviewsArr01.forEach(review => {
+	let element = document.createElement('div')
+
+	element.classList.add('reviews__review');
+	element.classList.add('review');
+
+	let template = `
+<div class="review__stars">
+	<img src="./img/star.svg" alt="">
+	<img src="./img/star.svg" alt="">
+	<img src="./img/star.svg" alt="">
+	<img src="./img/star.svg" alt="">
+	<img src="./img/star.svg" alt="">
+</div>
+<p class="review__txt text">${review.text}</p>
+<p class="review__author text">- ${review.author}</p>
+	`
+	
+	element.innerHTML = template
+	reviewsList01.appendChild(element)
+});
+
+
+// Генерируем все карточки
+reviewsArr02.forEach(review => {
+	let element = document.createElement('div')
+
+	element.classList.add('reviews__review');
+	element.classList.add('review');
+
+	let template = `
+<div class="review__stars">
+	<img src="./img/star.svg" alt="">
+	<img src="./img/star.svg" alt="">
+	<img src="./img/star.svg" alt="">
+	<img src="./img/star.svg" alt="">
+	<img src="./img/star.svg" alt="">
+</div>
+<p class="review__txt text">${review.text}</p>
+<p class="review__author text">- ${review.author}</p>
+	`
+	
+	element.innerHTML = template
+	reviewsList02.appendChild(element)
+});
