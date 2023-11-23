@@ -1,5 +1,5 @@
 .services {
-	@include av('margin-top', $s6, $s5, $maxWC, $minWC);
+	@include av('padding-top', $s6, $s5, $maxWC, $minWC);
 }
 
 .services__list {

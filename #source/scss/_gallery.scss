@@ -1,5 +1,5 @@
 .gallery {
-	@include av('margin-top', 180, 100, $maxWC, $minWC);
+	@include av('padding-top', 180, 100, $maxWC, $minWC);
 }
 
 .gallery__list {

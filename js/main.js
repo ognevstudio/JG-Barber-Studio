@@ -1,9 +1,13 @@
+const header = document.querySelector(".header")
 const burger = document.querySelector(".menu-burger")
 const menu = document.querySelector(".menu")
+const app = document.querySelector(".app")
 
 burger.addEventListener( "click", () => {
+	header.classList.toggle('active');
 	menu.classList.toggle('active');
 	burger.classList.toggle('active')
+	app.classList.toggle('active')
 })
 
 window.addEventListener('resize', () => {

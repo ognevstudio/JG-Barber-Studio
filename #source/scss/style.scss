@@ -99,4 +99,9 @@ body {
 .app {
 	width: 100vw;
 	overflow: hidden;
+
+	&.active {
+		height: 100vh;
+		overflow: hidden;
+	}
 }
