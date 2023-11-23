@@ -2,7 +2,8 @@ const burger = document.querySelector(".menu-burger")
 const menu = document.querySelector(".menu")
 
 burger.addEventListener( "click", () => {
-	menu.classList.toggle('show-menu');
+	menu.classList.toggle('active');
+	burger.classList.toggle('active')
 })
 
 window.addEventListener('resize', () => {
