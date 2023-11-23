@@ -1,3 +1,16 @@
+const burger = document.querySelector(".menu-burger")
+const menu = document.querySelector(".menu")
+
+burger.addEventListener( "click", () => {
+	menu.classList.toggle('show-menu');
+})
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    menu.classList.remove('show-menu');
+  }
+});
+
 const template = `
     <a class="inst" href="https://instagram.com/xruizzxx?igshid=NzZlODBkYWE4Ng==">@Josue</a>
     <div class="square"></div>
