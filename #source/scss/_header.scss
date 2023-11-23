@@ -33,7 +33,9 @@
 
 .header__btn {}
 
+
 .btn {
+	cursor: pointer !important;
 	font-family: Poppins;
 	@include av('font-size', 20, 15, $maxWC, $minWC);
 	font-style: normal;

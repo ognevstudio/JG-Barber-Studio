@@ -1,0 +1,38 @@
+.contact-us {
+	@include av('margin-bottom', $s4, $s3, $maxWC, $minWC);
+
+	a {
+		color: $txt-cream;
+
+	}
+}
+
+.contact-us__container {}
+
+.container {}
+
+.about-us__title {}
+
+.H2 {}
+
+.about-us__content {}
+
+.about-us__subtitle {}
+
+.blue-title {}
+
+.about-us__txt {}
+
+.text {}
+
+.google-map {
+	width: 100vw;
+	@include av('height', 500, 400, $maxWC, $minWC);
+	overflow: hidden;
+	@include av('margin-bottom', $s5, $s4, $maxWC, $minWC);
+}
+
+.gm-style-mtc,
+.gm-svpc {
+	display: none !important;
+}
