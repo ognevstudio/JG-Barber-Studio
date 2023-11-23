@@ -1,5 +1,6 @@
 .contact-us {
 	@include av('margin-bottom', $s4, $s3, $maxWC, $minWC);
+	@include av('margin-top', $s6, $s5, $maxWC, $minWC);
 
 	a {
 		color: $txt-cream;
