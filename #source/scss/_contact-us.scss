@@ -8,21 +8,33 @@
 	}
 }
 
+
+.contact-us {}
+
 .contact-us__container {}
 
 .container {}
 
-.about-us__title {}
+.contact-us__title {}
 
 .H2 {}
 
-.about-us__content {}
+.contact-us__content {
+	display: flex;
+	justify-content: space-between;
 
-.about-us__subtitle {}
+	margin-top: px($s2);
+}
+
+.contact-us__subtitle {
+	max-width: 350px;
+}
 
 .blue-title {}
 
-.about-us__txt {}
+.contact-us__txt {
+	max-width: 400px;
+}
 
 .text {}
 
@@ -36,4 +48,14 @@
 .gm-style-mtc,
 .gm-svpc {
 	display: none !important;
+}
+
+@media (max-width: px($wc3)) {
+	.contact-us__content {
+		display: block;
+	}
+
+	.contact-us__subtitle {
+		display: none;
+	}
 }

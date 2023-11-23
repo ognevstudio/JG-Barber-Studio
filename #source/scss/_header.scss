@@ -24,8 +24,8 @@
 }
 
 .logo {
-	width: 60px;
-	height: 60px;
+	@include av('width', 60, 50, $maxWC, $minWC);
+	@include av('height', 60, 50, $maxWC, $minWC);
 }
 
 .header__menu {}

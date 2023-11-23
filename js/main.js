@@ -2,6 +2,7 @@ const header = document.querySelector(".header")
 const burger = document.querySelector(".menu-burger")
 const menu = document.querySelector(".menu")
 const app = document.querySelector(".app")
+const links = document.querySelectorAll(".menu__link")
 
 burger.addEventListener( "click", () => {
 	header.classList.toggle('active');
@@ -9,6 +10,15 @@ burger.addEventListener( "click", () => {
 	burger.classList.toggle('active')
 	app.classList.toggle('active')
 })
+
+links.forEach(link => (
+	link.onclick = function(){
+		header.classList.toggle('active');
+		menu.classList.toggle('active');
+		burger.classList.toggle('active')
+		app.classList.toggle('active')
+	}
+)) 
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
