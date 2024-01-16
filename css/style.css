@@ -887,16 +887,10 @@ a {
   width: 100vw;
   height: 500px;
   overflow: hidden;
-  margin-bottom: 70px;
 }
 @media (max-width: 1070px) {
   .google-map {
     height: calc(400px + 100 * (100vw - 360px) / 710);
-  }
-}
-@media (max-width: 1070px) {
-  .google-map {
-    margin-bottom: calc(30px + 40 * (100vw - 360px) / 710);
   }
 }
 
@@ -913,6 +907,20 @@ a {
     display: none;
   }
 }
+.note {
+  /* txt */
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 26px */
+  color: #2E476B;
+  max-width: 1070px;
+  margin: 0px auto;
+  padding: 10px 20px 30px 20px;
+}
+
 .container {
   max-width: 1070px;
   margin: 0px auto;
