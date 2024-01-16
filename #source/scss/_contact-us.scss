@@ -71,5 +71,7 @@
 
 	max-width: px($maxWC);
 	margin: 0px auto;
+	display: flex;
+	justify-content: end;
 	padding: px($s2) px($s3) px($s4) px($s3);
 }

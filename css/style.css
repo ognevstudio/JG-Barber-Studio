@@ -918,6 +918,8 @@ a {
   color: #2E476B;
   max-width: 1070px;
   margin: 0px auto;
+  display: flex;
+  justify-content: end;
   padding: 10px 20px 30px 20px;
 }
 
