@@ -53,14 +53,14 @@ let servicesArr = [
 		title: 'Only haircut / Solo Corte', 
 		EN: 'Regular haircut and shampoo', 
 		ES: 'Corte regular y shampoo',
-		price: '$40.00',
+		price: '$45.00',
 		time: '30 min',
 	},
 	{
 		title: 'Haircut And Eyebrows / Corte y Cejas', 
 		EN: 'Regular haircut, Shampoo and eyebrows', 
 		ES: 'Corte regular, shampoo y cejas',
-		price: '$45.00',
+		price: '$50.00',
 		time: '30 min',
 	},
 	{
@@ -74,36 +74,15 @@ let servicesArr = [
 		title: 'only Beard / Solo Barba', 
 		EN: 'Hot towel and shave, hair line up can be added ', 
 		ES: 'Toalla caliente y rasurado, delineado de cabello puede ser agregado',
-		price: '$40.00',
+		price: '$45.00',
 		time: '30 min',
 	},
 	{
 		title: 'Kids Haircut / Corte de niño', 
 		EN: '9 year old and under ', 
 		ES: '9 años o menos',
-		price: '$40.00',
+		price: '$45.00',
 		time: '30 min',
-	},
-	{
-		title: 'Haircut / Corte De Cabello', 
-		EN: 'Eyebrows included , shampoo and styled hair with our line of products', 
-		ES: '',
-		price: '$50.00',
-		time: '60 min',
-	},
-	{
-		title: 'Haircut And Beard Shave/ Corte Y Rasurado De Barba', 
-		EN: 'Eyebrows included , shampoo and styled hair with our line of products', 
-		ES: '',
-		price: '$60.00',
-		time: '60 min',
-	},
-	{
-		title: 'Kids Haircut / Corte De Cabello Infantil', 
-		EN: 'Eyebrows included (optional) , shampoo and styled hair with our line of products', 
-		ES: '',
-		price: '$50.00',
-		time: '60 min',
 	}
 ]
 
