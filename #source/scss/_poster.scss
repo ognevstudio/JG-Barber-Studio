@@ -106,6 +106,14 @@
 	width: 100%;
 }
 
+.inst {
+	transition: 0.4s;
+
+	&:hover {
+		color: $txt-lightcream;
+	}
+}
+
 .square {
 	width: 8px;
 	height: 8px;

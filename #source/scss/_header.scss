@@ -34,6 +34,11 @@
 
 .menu__link {
 	margin-right: 30px;
+	transition: 0.4s;
+
+	&:hover {
+		color: $txt-lightcream;
+	}
 }
 
 .header__btn {}
@@ -57,6 +62,12 @@
 
 	color: $txt-black;
 	background-color: $main-white;
+
+	transition: 0.4s;
+
+	&:hover {
+		background-color: $txt-lightcream;
+	}
 }
 
 @media (max-width: px($wc4)) {

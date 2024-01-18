@@ -11,14 +11,21 @@ burger.addEventListener( "click", () => {
 	app.classList.toggle('active')
 })
 
-links.forEach(link => (
-	link.onclick = function(){
-		header.classList.toggle('active');
-		menu.classList.toggle('active');
-		burger.classList.toggle('active')
-		app.classList.toggle('active')
+const screenSizeCheck = () => {
+	let screenWidth = document.documentElement.clientWidth
+	if (screenWidth < 767) {
+		links.forEach(link => (
+			link.onclick = function(){
+				header.classList.toggle('active');
+				menu.classList.toggle('active');
+				burger.classList.toggle('active')
+				app.classList.toggle('active')
+			}
+		)) 
 	}
-)) 
+}
+
+screenSizeCheck()
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
@@ -55,6 +62,7 @@ let servicesArr = [
 		ES: 'Corte regular y shampoo',
 		price: '$45.00',
 		time: '30 min',
+		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=7656568b-c678-4d62-b9b8-a959aaba6414"
 	},
 	{
 		title: 'Haircut And Eyebrows / Corte y Cejas', 
@@ -62,6 +70,7 @@ let servicesArr = [
 		ES: 'Corte regular, shampoo y cejas',
 		price: '$50.00',
 		time: '30 min',
+		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=dc5d666a-7295-4835-99be-81e24604685c"
 	},
 	{
 		title: 'Haircut & Beard / Corte y Barba', 
@@ -69,6 +78,7 @@ let servicesArr = [
 		ES: 'Rasurado con toalla caliente, shampoo, no incluye pintura temporal',
 		price: '$70.00',
 		time: '60 min',
+		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=99310da3-8e31-4039-b87a-0e31681ac06e"
 	},
 	{
 		title: 'only Beard / Solo Barba', 
@@ -76,6 +86,7 @@ let servicesArr = [
 		ES: 'Toalla caliente y rasurado, delineado de cabello puede ser agregado',
 		price: '$45.00',
 		time: '30 min',
+		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=b7f9f5b8-0431-4ff0-a9ea-d12a3cdaa4f4"
 	},
 	{
 		title: 'Kids Haircut / Corte de niño', 
@@ -83,6 +94,7 @@ let servicesArr = [
 		ES: '9 años o menos',
 		price: '$45.00',
 		time: '30 min',
+		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=8dc88025-b7f2-4637-a0c3-10c7309dbbda"
 	}
 ]
 
@@ -95,15 +107,17 @@ servicesArr.forEach(service => {
 	imgPath = './img/main.svg'
 
 	let template = `
-	<div class="service__header">
-		<h4 class="service__title">${service.title}</h4>
-		<p class="service__txt text">${service.EN}</p>
-		<p class="service__txt text">${service.ES}</p>	
-	</div>
-	<div class="service__info">
-		<span class="service__price bold-text">${service.price}</span>
-		<span class="service__time bold-text">${service.time}</span>
-	</div>
+	<a href="${service.link}" class="service-link">
+		<div class="service__header">
+			<h4 class="service__title">${service.title}</h4>
+			<p class="service__txt text">${service.EN}</p>
+			<p class="service__txt text">${service.ES}</p>	
+		</div>
+		<div class="service__info">
+			<span class="service__price bold-text">${service.price}</span>
+			<span class="service__time bold-text">${service.time}</span>
+		</div>
+	</a>
 	`
 	
 	element.innerHTML = template

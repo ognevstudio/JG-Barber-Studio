@@ -17,9 +17,6 @@
 
 	background-color: $main-blue;
 	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
 
 .service {}
@@ -54,4 +51,11 @@
 	.services-list {
 		grid-template-columns: repeat(1, 1fr)
 	}
+}
+
+.service-link {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }

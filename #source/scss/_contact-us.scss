@@ -5,6 +5,11 @@
 	a {
 		color: $txt-cream;
 
+		transition: 0.4s;
+
+		&:hover {
+			color: $txt-lightcream;
+		}
 	}
 }
 

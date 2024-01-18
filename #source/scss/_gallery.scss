@@ -1,5 +1,5 @@
 .gallery {
-	@include av('padding-top', 180, 100, $maxWC, $minWC);
+	@include av('padding-top', 130, 100, $maxWC, $minWC);
 }
 
 .gallery__list {
@@ -21,6 +21,7 @@
 
 	max-height: 300px;
 	min-height: 150px;
+	height: 100%;
 
 	border-radius: 10px;
 }
@@ -33,6 +34,7 @@
 @media (max-width: px($wc3)) {
 	.gallery-list {
 		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
 	}
 
 	.gallery-list__li:last-child {
