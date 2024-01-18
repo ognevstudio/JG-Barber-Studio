@@ -715,11 +715,15 @@ a {
   padding: 20px;
   background-color: #172436;
   border-radius: 10px;
+  transition: 0.4s;
 }
 @media (max-width: 1070px) {
   .services-list__li {
     padding: calc(16px + 4 * (100vw - 360px) / 710);
   }
+}
+.services-list__li:hover {
+  background-color: #2B384A;
 }
 
 .service__txt {

@@ -17,6 +17,12 @@
 
 	background-color: $main-blue;
 	border-radius: 10px;
+
+	transition: 0.4s;
+
+	&:hover {
+		background-color: #2B384A;
+	}
 }
 
 .service {}
