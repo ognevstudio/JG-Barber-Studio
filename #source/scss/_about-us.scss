@@ -11,7 +11,7 @@
 }
 
 .about-us__title {
-	@include av('margin-top', $s5, $s4, $maxWC, $minWC);
+	@include av('margin-top', $s4, $s3, $maxWC, $minWC);
 }
 
 .about-us__content {

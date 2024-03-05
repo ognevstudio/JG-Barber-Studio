@@ -32,24 +32,6 @@ window.addEventListener('resize', () => {
     menu.classList.remove('show-menu');
   }
 });
-
-const template = `
-    <a class="inst" href="https://instagram.com/xruizzxx?igshid=NzZlODBkYWE4Ng==">@Josue</a>
-    <div class="square"></div>
-    <a class="inst" href="https://instagram.com/rr_gab?igshid=NzZlODBkYWE4Ng==">@Gabriel</a>
-    <div class="square"></div>
-`;
-
-const line = document.querySelector(".poster-line__container");
-
-for (let i = 0; i < 20; i++) {
-    const lineBody = document.createElement('div');
-    lineBody.classList.add('line__body');
-    lineBody.innerHTML = template;
-    line.appendChild(lineBody);
-}
-
-
 /* ----------------------------------- */
 
 const servicesList = document.querySelector('.services-list')
@@ -62,7 +44,7 @@ let servicesArr = [
 		ES: 'Corte regular y shampoo',
 		price: '$45.00',
 		time: '30 min',
-		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=7656568b-c678-4d62-b9b8-a959aaba6414"
+		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=59fcdcdd-1f50-4032-a046-5b5bcd6cb379"
 	},
 	{
 		title: 'Haircut And Eyebrows / Corte y Cejas', 
@@ -70,7 +52,7 @@ let servicesArr = [
 		ES: 'Corte regular, shampoo y cejas',
 		price: '$50.00',
 		time: '30 min',
-		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=dc5d666a-7295-4835-99be-81e24604685c"
+		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=1319f9ef-13e8-4afb-90e1-4662dc2435a1"
 	},
 	{
 		title: 'Haircut & Beard / Corte y Barba', 
@@ -78,7 +60,7 @@ let servicesArr = [
 		ES: 'Rasurado con toalla caliente, shampoo, no incluye pintura temporal',
 		price: '$70.00',
 		time: '60 min',
-		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=99310da3-8e31-4039-b87a-0e31681ac06e"
+		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=46c541e2-9579-48e2-94bb-80aa105a4dd8"
 	},
 	{
 		title: 'only Beard / Solo Barba', 
@@ -86,7 +68,7 @@ let servicesArr = [
 		ES: 'Toalla caliente y rasurado, delineado de cabello puede ser agregado',
 		price: '$45.00',
 		time: '30 min',
-		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=b7f9f5b8-0431-4ff0-a9ea-d12a3cdaa4f4"
+		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=ff5e61eb-721f-4daa-aaf4-d1c8c7c50529"
 	},
 	{
 		title: 'Kids Haircut / Corte de niño', 
@@ -94,7 +76,7 @@ let servicesArr = [
 		ES: '9 años o menos',
 		price: '$45.00',
 		time: '30 min',
-		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=8dc88025-b7f2-4637-a0c3-10c7309dbbda"
+		link: "https://getsquire.com/booking/book/jg-barber-studio-aurora/barber/josue-ruiz/schedule?cart=7212aa11-bb3e-4802-857e-1156980bf4eb"
 	}
 ]
 

@@ -1,5 +1,5 @@
 .gallery {
-	@include av('padding-top', 130, 100, $maxWC, $minWC);
+	@include av('padding-top', $s6, $s5, $maxWC, $minWC);
 }
 
 .gallery__list {
@@ -20,7 +20,7 @@
 	object-fit: cover;
 
 	max-height: 300px;
-	min-height: 150px;
+	min-height: 130px;
 	height: 100%;
 
 	border-radius: 10px;

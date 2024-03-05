@@ -484,11 +484,11 @@ a {
 }
 
 .about-us__title {
-  margin-top: 70px;
+  margin-top: 30px;
 }
 @media (max-width: 1070px) {
   .about-us__title {
-    margin-top: calc(30px + 40 * (100vw - 360px) / 710);
+    margin-top: calc(20px + 10 * (100vw - 360px) / 710);
   }
 }
 
@@ -514,144 +514,94 @@ a {
     display: none;
   }
 }
-.poster {
+.social-media {
   padding-top: 120px;
-  position: relative;
-  width: 100vw;
-  overflow: hidden;
 }
 @media (max-width: 1070px) {
-  .poster {
+  .social-media {
     padding-top: calc(70px + 50 * (100vw - 360px) / 710);
   }
 }
 
-.poster__container {
-  position: relative;
-  z-index: 1;
+.social-media__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  justify-content: space-between;
+}
+@media (max-width: 1070px) {
+  .social-media__body {
+    gap: calc(0px + 80 * (100vw - 360px) / 710);
+  }
+}
+@media (max-width: 767.98px) {
+  .social-media__body {
+    display: block;
+    margin-left: auto;
+    width: 70%;
+  }
+}
+@media (max-width: 474.98px) {
+  .social-media__body {
+    width: 100%;
+  }
+}
+
+.social-media__instagram {
+  width: 100%;
+}
+
+.social-media__text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0px 8px;
+  justify-content: space-between;
+  align-items: start;
 }
-
-.poster_bg {
-  position: absolute;
-  top: 10%;
-  white-space: nowrap;
-  font-family: Poppins;
-  font-size: 180px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
-  text-transform: uppercase;
-  color: #172436;
-  margin-left: -50%;
+@media (max-width: 767.98px) {
+  .social-media__text {
+    margin-top: 30px;
+  }
 }
-@media (max-width: 1070px) {
-  .poster_bg {
-    font-size: calc(60px + 120 * (100vw - 360px) / 710);
+@media (max-width: 474.98px) {
+  .social-media__text {
+    margin-top: 20px;
   }
 }
 
-.line {
-  z-index: 1;
-  max-width: 100%;
-  display: flex;
-  /* Делаем текст в строке, чтобы он мог бежать горизонтально */
-  animation: marquee 700s linear infinite;
-  /* Название анимации, длительность, способ интерполяции и бесконечное повторение */
-  animation-timing-function: linear;
+.social-media__btn {
+  display: inline-block;
 }
-.line span {
-  color: #2E476B;
+@media (max-width: 767.98px) {
+  .social-media__btn {
+    margin-top: 10px;
+  }
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  /* Начальное положение текста */
-  100% {
-    transform: translateX(-100%);
-  }
-  /* Конечное положение текста (влево на 100% от ширины контейнера) */
-}
-.poster__img {
-  max-width: 900px;
+.social-media__img {
+  margin-top: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
-  margin: 0 auto;
-}
-
-.poster-line {
-  width: 120%;
-  position: relative;
-  z-index: 10;
-  margin-top: -5%;
-  margin-left: -2%;
-  transform: rotate(-5deg);
-}
-
-.poster-line__container {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: 2px solid #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
-  background: #0F1824;
-  font-family: Poppins;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%;
-  /* 36px */
-  text-transform: lowercase;
+  height: 300px;
+  border-radius: 10px;
 }
 @media (max-width: 1070px) {
-  .poster-line__container {
-    gap: calc(16px + 14 * (100vw - 360px) / 710);
+  .social-media__img {
+    margin-top: calc(20px + 10 * (100vw - 360px) / 710);
   }
 }
 @media (max-width: 1070px) {
-  .poster-line__container {
-    font-size: calc(15px + 9 * (100vw - 360px) / 710);
+  .social-media__img {
+    height: calc(200px + 100 * (100vw - 360px) / 710);
   }
-}
-
-.line__body {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  width: 100%;
-}
-@media (max-width: 1070px) {
-  .line__body {
-    gap: calc(16px + 14 * (100vw - 360px) / 710);
-  }
-}
-
-.inst {
-  transition: 0.4s;
-}
-.inst:hover {
-  color: #FFDEB2;
-}
-
-.square {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #F6C094;
 }
 
 .gallery {
-  padding-top: 130px;
+  padding-top: 120px;
 }
 @media (max-width: 1070px) {
   .gallery {
-    padding-top: calc(100px + 30 * (100vw - 360px) / 710);
+    padding-top: calc(70px + 50 * (100vw - 360px) / 710);
   }
 }
 
@@ -672,7 +622,7 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 300px;
-  min-height: 150px;
+  min-height: 130px;
   height: 100%;
   border-radius: 10px;
 }
